@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dot Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="slider-score-container">
+      <div class="score-btn-container align-center-vertical">
+        <h2 class="score-text" id="score-text"></h2>
+        <button id="play-pause-btn" class="start-btn "></button>
+      </div>
+      <div class="slider align-center">
+        <input
+          type="range"
+          class="slider-input"
+          id="speed-input"
+          name="speed"
+          min=".16"
+          max="1.6"
+          value=".16"
+          step=".01"
+        />
+      </div>
+      <label for="speed">Speed</label>
+    </div>
+    <div class="canvas-container">
+      <canvas id="dot-game-canvas"></canvas>
+    </div>
+    <script type="module" src="util.js"></script>
+    <script type="module" src="ball.js"></script>
+    <script type="module" src="game.js"></script>
+    <script type="module" src="constants.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
